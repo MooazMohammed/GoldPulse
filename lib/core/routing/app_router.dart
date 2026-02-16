@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:goldpulse/core/presentation/home_screen.dart';
 import 'package:goldpulse/core/routing/app_routes.dart';
+import 'package:goldpulse/features/gold/presentation/screens/gold_screen.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  static   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.homeScreen:
         return MaterialPageRoute(
@@ -12,6 +13,15 @@ class AppRouter {
           },
         );
 
+
+      case AppRoutes.goldScreen :
+         return MaterialPageRoute(
+          builder: (context) {
+            return GoldScreen();
+          },
+        );
+
+      
       default:
         return MaterialPageRoute(
           builder: (context) {
