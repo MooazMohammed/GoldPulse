@@ -1,5 +1,13 @@
 class ApiConstants {
-  static const baseUrl = "";
-  static const endPoint = "";
+
+
+
+  static const baseUrl = "https://api.gold-api.com-price/";
+
+  static const goldEndPoint = "XAU";
+  static const sliverEndPoint = "XAG";
+
+
+
 
 }

@@ -3,8 +3,8 @@ import 'package:goldpulse/core/constants/app_colors.dart';
 import 'package:goldpulse/core/constants/app_images.dart';
 import 'package:goldpulse/core/constants/app_strings.dart';
 
-class GoldScreen extends StatelessWidget {
-  const GoldScreen({super.key});
+class SliverScreen extends StatelessWidget {
+  const SliverScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +13,9 @@ class GoldScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          AppStrings.goldTracker,
+          AppStrings.sliverTracker,
           style: TextStyle(
-            color: AppColors.goldColor,
+            color: AppColors.sliverColor,
             fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
@@ -27,15 +27,14 @@ class GoldScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image(
-            image: AssetImage(AppImages.goldImage),
-            // height: 800,
-            // width: 800,
+            image: AssetImage(AppImages.sliverImage),
+            width: double.infinity,
           ),
           // SizedBox(height: 10),
           Text(
             "333333\$",
             style: TextStyle(
-              color: AppColors.goldColor,
+              color: AppColors.sliverColor,
               fontWeight: FontWeight.bold,
               fontSize: 20,
             ),
