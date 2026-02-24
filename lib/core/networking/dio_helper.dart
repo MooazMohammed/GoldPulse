@@ -4,7 +4,7 @@ import 'package:goldpulse/core/networking/api_constants.dart';
 class DioHelper {
   static late Dio dio;
 
-  static init() {
+  static  init() {
     dio = Dio(
       BaseOptions(
         baseUrl: ApiConstants.baseUrl,
