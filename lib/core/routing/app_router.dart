@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:goldpulse/core/presentation/home_screen.dart';
 import 'package:goldpulse/core/routing/app_routes.dart';
 import 'package:goldpulse/features/gold/presentation/screens/gold_screen.dart';
-import 'package:goldpulse/features/sliver/presentation/screens/sliver_screen.dart';
+import 'package:goldpulse/features/%D9%8Dsliver/presentation/screens/sliver_screen.dart';
 
 class AppRouter {
   static Route generateRoute(RouteSettings settings) {

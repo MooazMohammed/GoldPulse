@@ -1,25 +1,19 @@
 import 'package:dartz/dartz.dart';
 import 'package:goldpulse/core/networking/api_constants.dart';
 import 'package:goldpulse/core/networking/dio_helper.dart';
-import 'package:goldpulse/features/gold/data/models/gold_model.dart';
+import 'package:goldpulse/features/%D9%8Dsliver/data/models/sliver_model.dart';
 
-class GoldRepo {
-  Future<Either<String, GoldModel>> getGold() async {
+class SliverRepo {
+  Future<Either<String, SliverModel>> getSliver() async {
     try {
-     
-      
       final response = await DioHelper.getData(
-        endPoint: ApiConstants.goldEndPoint,
+        endPoint: ApiConstants.sliverEndPoint,
       );
-      
-     
-      
-      final model = GoldModel.fromJson(response.data);
-    
-      
+
+      final model = SliverModel.fromJson(response);
+
       return right(model);
     } catch (e) {
-
       return left(e.toString());
     }
   }
