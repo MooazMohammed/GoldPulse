@@ -10,7 +10,7 @@ class SliverRepo {
         endPoint: ApiConstants.sliverEndPoint,
       );
 
-      final model = SliverModel.fromJson(response);
+      final model = SliverModel.fromJson(response.data);
 
       return right(model);
     } catch (e) {

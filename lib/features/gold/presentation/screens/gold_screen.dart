@@ -18,6 +18,9 @@ class GoldScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          iconTheme: IconThemeData(
+            color: AppColors.goldColor,
+          ),
           title: Text(
             AppStrings.goldTracker,
             style: TextStyle(
